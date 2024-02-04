@@ -1,0 +1,155 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/remind_viewpage1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/remind1_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期一"
+                android:background="#00000000"/>
+
+            <CheckBox
+                android:id="@+id/remind1_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期二"
+                android:layout_marginTop="5dp"/>
+            <CheckBox
+                android:id="@+id/remind1_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期三"
+                android:layout_marginTop="5dp"/>
+            <CheckBox
+                android:id="@+id/remind1_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期四"
+                android:layout_marginTop="5dp"/>
+            <CheckBox
+                android:id="@+id/remind1_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期五"
+                android:layout_marginTop="5dp"/>
+            <CheckBox
+                android:id="@+id/remind1_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期六"
+                android:layout_marginTop="5dp"/>
+            <CheckBox
+                android:id="@+id/remind1_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#424141"
+                android:text=" 星期日"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/remind1_choose_minute"
+            android:layout_width="120dp"
+            android:layout_height="144dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            app:npv_HintText="分"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorHint="#424141"
+            app:npv_TextColorSelected="#63CEFF"
+            app:npv_TextSizeHint="36sp"
+            app:npv_TextSizeNormal="24sp"
+            app:npv_TextSizeSelected="36sp" />
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/remind1_choose_hour"
+            android:layout_width="120dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="-23dp"
+            android:layout_marginEnd="-25dp"
+            android:layout_toStartOf="@+id/remind1_choose_minute"
+            android:layout_centerVertical="true"
+            app:npv_HintText="时"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorHint="#424141"
+            app:npv_TextColorSelected="#63CEFF"
+            app:npv_TextSizeHint="36sp"
+            app:npv_TextSizeNormal="24sp"
+            app:npv_TextSizeSelected="36sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/remind1_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/dialog_button_background"
+            android:text="取消"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/remind1_confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/dialog_button_background"
+            android:text="确认"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

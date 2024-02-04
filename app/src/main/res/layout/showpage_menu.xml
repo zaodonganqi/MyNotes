@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:layout_gravity="center"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/menu_remind"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="设置提醒"
+            android:textSize="15sp"
+            android:textColor="#E6000000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="22dp"
+            android:background="@drawable/menu_topbutton_background"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/menu_color"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="修改文字颜色"
+            android:textSize="15sp"
+            android:textColor="#E6000000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="22dp"
+            android:background="@drawable/menu_botton_background"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/menu_setbackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="修改背景"
+            android:textSize="15sp"
+            android:textColor="#E6000000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="22dp"
+            android:background="@drawable/menu_botton_background"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/menu_delete"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="删除此页"
+            android:textSize="15sp"
+            android:textColor="#E6000000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="22dp"
+            android:background="@drawable/menu_botton_background"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/menu_share"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="分享"
+            android:textSize="15sp"
+            android:textColor="#E6000000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="22dp"
+            android:background="@drawable/menu_buttombutton_background"
+            android:layout_weight="1"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

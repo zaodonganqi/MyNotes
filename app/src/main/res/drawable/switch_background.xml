@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 开启状态的圆形晕效果 -->
+    <item android:state_checked="true">
+        <ripple android:color="#00000000">
+            <item android:id="@android:id/mask"/>
+        </ripple>
+    </item>
+
+    <!-- 关闭状态的圆形晕效果 -->
+    <item android:state_checked="false">
+        <ripple android:color="#00000000">
+            <item android:id="@android:id/mask"/>
+        </ripple>
+    </item>
+</selector>

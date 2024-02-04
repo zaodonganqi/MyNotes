@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/personal_background"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/all_button_onclick_round_shape"
+            android:scaleType="fitCenter"
+            android:padding="13dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:src="@mipmap/personal_background"
+            app:tint="#B3000000" />
+
+        <ImageButton
+            android:id="@+id/new_scene"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/all_button_onclick_round_shape"
+            android:scaleType="fitCenter"
+            android:padding="13dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:src="@mipmap/new_scene"
+            app:tint="#B3000000" />
+
+        <ImageButton
+            android:id="@+id/settings1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/all_button_onclick_round_shape"
+            android:scaleType="fitCenter"
+            android:padding="15dp"
+            android:src="@mipmap/settings1"
+            app:tint="#B3000000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/all_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:textSize="27sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:text="全部任务"
+        android:textColor="#B2000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_tasks_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="160dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/new_task"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/new_task"
+        android:scaleType="center"
+        android:background="@drawable/new_task_background"
+        app:tint="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/task_long_click_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/task_long_click_bar_background"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/delete_these_tasks"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/all_button_onclick_round_shape"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/delete_item"
+            app:tint="#99000000" />
+
+        <ImageButton
+            android:id="@+id/choose_all"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/all_button_onclick_round_shape"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/choose_all"
+            app:tint="#99000000" />
+
+        <ImageButton
+            android:id="@+id/close_long_click"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/all_button_onclick_round_shape"
+            android:scaleType="fitCenter"
+            android:padding="9dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="14.5dp"
+            android:src="@mipmap/close_long_click"
+            app:tint="#99000000" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

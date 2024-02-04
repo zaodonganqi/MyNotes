@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RealyProject" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/main_color</item>
+        <item name="colorOnPrimary">@color/main_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/main_color</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/editext_cursor</item>
+        <item name="colorControlActivated">#7AD2FA</item>
+        <item name="android:textColorHighlight">#B3DDEF</item>
+
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/leftin</item>
+        <item name="android:windowExitAnimation">@anim/rightout</item>
+    </style>
+
+    <style name="TransferBarDialog">
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="MenuAnimation">
+        <item name="android:windowEnterAnimation">@anim/menuin</item>
+        <item name="android:windowExitAnimation">@anim/menuout</item>
+    </style>
+
+    <style name="RemindTabSelectTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RemindTabTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+</resources>

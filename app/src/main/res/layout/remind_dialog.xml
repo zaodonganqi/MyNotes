@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp">
+
+        <TextView
+            android:id="@+id/remind_music"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/dialog_background"
+            android:text="当前音频：鸡你太美"
+            android:textSize="20sp"
+            android:textColor="#6A6A6A"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingStart="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/dialog_background"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/remind_tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            app:tabIndicator="@drawable/remind_tab_indicator"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="#5FC5F3"
+            app:tabIndicatorFullWidth="false"
+            app:tabSelectedTextAppearance="@style/RemindTabSelectTextStyle"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/RemindTabTextStyle"
+            app:tabTextColor="#373737" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/remind_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/dialog_background" />
+
+    </LinearLayout>
+
+</LinearLayout>

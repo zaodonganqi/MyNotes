@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/remind_viewpage2"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="123dp"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/remind2_choose_minute"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            app:npv_HintText="分"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorHint="#63CEFF"
+            app:npv_TextColorSelected="#63CEFF"
+            app:npv_TextSizeHint="30sp"
+            app:npv_TextSizeNormal="20sp"
+            app:npv_TextSizeSelected="30sp" />
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/remind2_choose_hour"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="-23dp"
+            android:layout_marginEnd="-25dp"
+            android:layout_toStartOf="@+id/remind2_choose_minute"
+            android:layout_toEndOf="@+id/remind2_choose_date"
+            app:npv_HintText="时"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorHint="#63CEFF"
+            app:npv_TextColorSelected="#63CEFF"
+            app:npv_TextSizeHint="30sp"
+            app:npv_TextSizeNormal="20sp"
+            app:npv_TextSizeSelected="30sp" />
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/remind2_choose_date"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorSelected="#63CEFF"
+            app:npv_TextSizeNormal="20sp"
+            app:npv_TextSizeSelected="30sp"
+            app:npv_WrapSelectorWheel="false" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/remind2_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/dialog_button_background"
+            android:text="取消"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/remind2_confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/dialog_button_background"
+            android:text="确认"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

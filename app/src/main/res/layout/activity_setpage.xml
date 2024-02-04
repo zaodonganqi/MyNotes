@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/set_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/setpage_back_to_main"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:padding="14dp"
+        android:background="@drawable/all_button_onclick_round_shape"
+        android:scaleType="fitCenter"
+        app:tint="#B3000000" />
+
+    <RelativeLayout
+        android:id="@+id/setting1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:background="@drawable/settings_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="参考按钮"
+            android:textColor="#CC000000"
+            android:background="#00000000"
+            android:textSize="23sp" />
+
+        <Switch
+            android:id="@+id/setting1_switch"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:checked="true"
+            android:track="@drawable/setting_switch_track"
+            android:thumb="@drawable/setting_switch_thumb"
+            android:background="#00000000"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </RelativeLayout>
+
+</LinearLayout>

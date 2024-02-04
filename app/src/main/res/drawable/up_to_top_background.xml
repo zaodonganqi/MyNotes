@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="0"
+    android:exitFadeDuration="100">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <stroke android:color="@color/black" android:width="0dp" />
+            <solid android:color="#5DA4AE" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:color="@color/black" android:width="0dp" />
+            <solid android:color="#56B8FA" />
+        </shape>
+    </item>
+</selector>
